@@ -31,6 +31,16 @@ This ReadMe is divided into 2 main sections:
 - the first focusing on the theory behind Linear Regression and Machine Learning,
 - and the second dealing with the project itself.
 
+The notebooks are numbered to follow that same order:
+
+| Notebook | Content |
+|----------|---------|
+| [`01_theory_simple_regression.ipynb`](01_theory_simple_regression.ipynb) | Simple (univariate) linear regression on the advertising dataset |
+| [`02_theory_error_metrics.ipynb`](02_theory_error_metrics.ipynb) | Residuals, error metrics (RMSE, R²) and the effect of outliers |
+| [`03_theory_dummy_variables.ipynb`](03_theory_dummy_variables.ipynb) | Encoding and interpreting categorical (dummy) variables |
+| [`04_diamonds_eda_and_models.ipynb`](04_diamonds_eda_and_models.ipynb) | The full diamond-price pipeline: EDA, cleaning, feature engineering, model training/evaluation and SHAP explainability |
+| [`05_diamonds_pycaret_comparison.ipynb`](05_diamonds_pycaret_comparison.ipynb) | Low-code model comparison with PyCaret |
+
 <br>
 
 # $\color{goldenrod}{\textrm{1 - Machine Learning and Linear Regression Theory}}$
@@ -49,7 +59,7 @@ In some cases, there is only one predictor variable, which makes the relation a 
 
 - Multivariate analysis is when multiple variables all work together to explain the outcome variable. For instance, using the data above, let’s say we still want to predict the number of minutes a person is awake during the night. We think that this outcome could be determined by multiple factors in addition to the number of times a person wakes up during the night: the minutes of sleep they get overall, and their daytime activity level (maybe people who are more active are likely to sleep more).
 
-[This ipynb](linear-regression-part1.ipynb) uses [this data file](/data/advertising.csv) to exemplify the use of seaborn/matplotlib tolls such as regplot and pairplot below, to visualize and study regression cases.
+[This ipynb](01_theory_simple_regression.ipynb) uses [this data file](/data/advertising.csv) to exemplify the use of seaborn/matplotlib tolls such as regplot and pairplot below, to visualize and study regression cases.
 
 <div style="display: flex; justify-content: space-around; align-items: center;">
     <img src="images/regplot_TV.png" alt="alt text" width="30%" style="display: block; margin: auto;" />
